@@ -1,0 +1,41 @@
+<template>
+    <template if:true={dataLoaded}>
+        <div class="slds-grid slds-theme_shade" style="height:30px">
+            <div class="slds-size_1-of-7">Primary Nature</div>
+            <div class="slds-size_2-of-7">Complaint Type</div>
+            <div class="slds-size_2-of-7">Complaint Sub Type</div>
+            <div class="slds-size_2-of-7">Complaint Outcome</div>
+        </div>
+        <template for:each={data} for:item="item">
+            <div key={item.Id} class="slds-grid slds-align_absolute-center" style="height:40px">
+                <div class="slds-size_1-of-7">
+                    <lightning-input variant="label-hidden" data-id={item.Id} data-type="checkbox" type="checkbox" onchange={handleCheckboxChange} > </lightning-input>
+                </div>
+                <div class="slds-size_2-of-7">{item.complaintType}</div>
+                <div class="slds-size_2-of-7">{item.complaintSubType}</div>
+                <div class="slds-size_2-of-7">
+                    <lightning-layout-item>
+                        <lightning-combobox
+                            variant="label-hidden"
+                            data-id={item.Id}
+                            data-previousvalue={item.complaintOutcome}
+                            options={outcomes}
+                            onchange={outcomeChanged}
+                            value={item.complaintOutcome}
+                            placeholder="Select Outcome">
+                        </lightning-combobox>
+                    </lightning-layout-item>
+                </div>
+            </div>
+        </template>
+        <div class="slds-grid slds-grid_align-end">
+            <div class="slds-col">
+                <lightning-button type="button" label="Save" variant="brand" onclick={saveAll}>
+                </lightning-button>
+            </div>
+        </div>
+    </template>
+    <template if:true={showSpinner}>
+        <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+    </template>
+</template>
