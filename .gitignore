@@ -32,3 +32,4 @@ mm.log
 # OSX-specific exclusions
 .[dD][sS]_[sS]tore
 .sfdx/tools
+.sfdx/indexes/lwc/custom-components.json
