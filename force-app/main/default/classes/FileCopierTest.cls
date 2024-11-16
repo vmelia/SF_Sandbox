@@ -43,4 +43,14 @@ private class FileCopierTest {
         Assert.isTrue(result, 'Expected result to be true.');  
         ((FileManager)apexMocks.verify(fileManager, 1)).writeFile('outputPath.txt', new List<String>{'1', '2', '3'});
     }
+
+    @isTest
+    static void emptyList() {
+        initialize(new List<String>());
+
+        Boolean result = fileCopier.copyNumbers('inputPath.txt', 'outputPath.txt');
+
+        Assert.isFalse(result, 'Expected result to be false.');  
+        ((FileManager)apexMocks.verify(fileManager, fflib_ApexMocks.NEVER)).writeFile('outputPath.txt', new List<String>());
+    }
 }
