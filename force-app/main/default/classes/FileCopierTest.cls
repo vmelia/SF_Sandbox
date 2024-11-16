@@ -13,8 +13,7 @@ private class FileCopierTest {
 		apexMocks.when(fileManager.readFile('inputPath.txt')).thenReturn(inputLines);
 		apexMocks.stopStubbing();
     }
-
-    
+  
     @isTest
     static void emptyList() {
         initialize(new List<String>());
@@ -24,7 +23,7 @@ private class FileCopierTest {
         Assert.isFalse(result, 'Expected result to be false.');  
         ((FileManager)apexMocks.verify(fileManager, fflib_ApexMocks.NEVER)).writeFile('outputPath.txt', new List<String>());
     }
-    
+
     @isTest
     static void noNumbers() {
         initialize(new List<String>{'a', 'b', 'c'});
