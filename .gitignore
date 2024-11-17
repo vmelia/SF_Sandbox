@@ -33,3 +33,4 @@ mm.log
 .[dD][sS]_[sS]tore
 .sfdx/tools
 .sfdx/indexes/lwc/custom-components.json
+.sfdx/indexes/lwc/custom-components.json
