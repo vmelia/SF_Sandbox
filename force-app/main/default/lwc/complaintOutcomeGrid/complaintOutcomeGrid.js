@@ -21,19 +21,6 @@ export default class ComplaintCaseNatureGrid extends LightningElement {
     outcomeChanged(event) {
         console.log('event = ' + event);  
     }
-
-    saveAll() {
-        try {
-          this.showSpinner = true;
-
-          // Do something.
-          
-        } catch (error) {
-          this.error = error;
-        } finally {
-          this.showSpinner = false;
-        }
-      }
 }
 
 function generateData() {

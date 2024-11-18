@@ -12,7 +12,7 @@ private class DailyLeadProcessorTest {
         insert leads;
 
         Test.startTest();
-        String jobId = System.schedule('Process Leads 1', cronExp, new DailyLeadProcessor());
+        String jobId = System.schedule('Process', cronExp, new DailyLeadProcessor());
         Test.stopTest();
 
         leads = [SELECT Id FROM Lead WHERE LeadSource = 'Dreamforce'];

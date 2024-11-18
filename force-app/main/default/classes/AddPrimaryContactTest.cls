@@ -1,5 +1,6 @@
 @isTest
 private class AddPrimaryContactTest {
+
     @isTest
     private static void testAddPrimaryContactClass() {
         List<Account> accounts = new List<Account>();

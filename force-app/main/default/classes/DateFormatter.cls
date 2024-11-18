@@ -6,5 +6,5 @@ public with sharing class DateFormatter {
 
     public String getFormattedDate() {
         return helper.today().format();
-    }   
+    } 
 }

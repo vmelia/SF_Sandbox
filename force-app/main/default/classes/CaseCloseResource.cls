@@ -6,6 +6,6 @@ global with sharing class CaseCloseResource {
         String[] uriParts = req.requestURI.split('/');
         Id caseId = uriParts[2];
 
-        CaseService.closeCases(new Set<Id>{caseId}, reason);
+        CaseService.closeCases(new Set<Id>{ caseId }, reason);
     }
 }
