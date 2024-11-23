@@ -5,6 +5,7 @@
 .metadata
 build.properties
 config
+.sfdx/
 
 # Apex Log as optional
 apex-scripts/log
@@ -31,7 +32,3 @@ mm.log
 
 # OSX-specific exclusions
 .[dD][sS]_[sS]tore
-.sfdx/*.*
-.sfdx/tools
-.sfdx/indexes/lwc/custom-components.json
-.sfdx/indexes/lwc/custom-components.json
