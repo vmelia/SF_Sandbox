@@ -1,11 +1,11 @@
 # GitIgnore for Salesforce Projects
 # Project Settings and MetaData
 .project
-.settings/
+.settings
 .metadata
 build.properties
 config
-.sfdx/
+.sfdx
 
 # Apex Log as optional
 apex-scripts/log
