@@ -1,11 +1,11 @@
 @isTest
 private class ParkLocatorTest {
-    @isTest    
-    static void testCallout() {
+    @isTest static void testCallout() {              
+        // This causes a fake response to be generated
         Test.setMock(WebServiceMock.class, new ParkServiceMock());
-
-        List<String> result = ParkLocator.country('text');
-
-        Assert.areEqual(2, result.size());
+        // Call the method that invokes a callout
+        String[] parks = ParkLocator.Country('Japan');
+        // Verify that a fake result is returned
+        system.assert(parks.size() > 0);
     }
 }

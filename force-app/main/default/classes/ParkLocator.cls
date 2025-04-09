@@ -1,6 +1,8 @@
-public with sharing class ParkLocator {
-    public List<String> country(String input) {
-        ParkService.ParksImplPort parks = new ParkService.ParksImplPort();
-        return parks.byCountry(input);
+public class ParkLocator {
+    public static List<String> Country(String name) {
+        List<String> countries = new List<String>();
+        ParkService.ParksImplPort park = new ParkService.ParksImplPort();
+        countries = park.byCountry(name);
+        return countries;
     }
 }
