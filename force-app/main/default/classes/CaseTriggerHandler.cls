@@ -9,8 +9,12 @@ public with sharing class CaseTriggerHandler {
 
     public static void limitComplaintNatures(List<Case> cases){
         for (Case caseRec : cases) {
-            if (caseRec.ComplianCards__c > 0 && caseRec.Nature__c == 'Complaint Card') {)
-            System.debug('**** fosEmailCards = ' + fosEmailCards);
+            if (String.isBlank(caseRec.Complaint_Natures__c)) continue;
+            
+            List<String> natures = caseRec.Complaint_Natures__c.split(';');
+            if (Langs.size() > 5){
+                caseRec.addError('You may only add up to 5 Complaint Natures.');
+            }
         }
 	}   
 }
