@@ -1,0 +1,7 @@
+<apex:page standardController="Case">
+
+<!-- Begin Default Content REMOVE THIS -->
+<h1>Congratulations</h1>
+Create Complaint
+<!-- End Default Content REMOVE THIS -->
+</apex:page>

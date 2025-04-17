@@ -6,4 +6,11 @@ public with sharing class CaseTriggerHandler {
             System.debug('**** fosEmailCards = ' + fosEmailCards);
         }
 	} 
+
+    public static void limitComplaintNatures(List<Case> cases){
+        for (Case caseRec : cases) {
+            if (caseRec.ComplianCards__c > 0 && caseRec.Nature__c == 'Complaint Card') {)
+            System.debug('**** fosEmailCards = ' + fosEmailCards);
+        }
+	}   
 }
