@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Support</fullName>
+    <active>true</active>
+    <businessProcess>Product Support Process</businessProcess>
+    <description>Record type for product support cases</description>
+    <label>Product Support</label>
+    <picklistValues>
+        <picklist>Applicable_Product__c</picklist>
+        <values>
+            <fullName>Cards</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vehicle Finance</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Complaint_Natures__c</picklist>
+        <values>
+            <fullName>Nature01 %28V%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature02 %28L%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature03 %28LV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature04 %28C%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature05 %28CV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature06 %28CL%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature07 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature08 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature09 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature10 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature11 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature12 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature13 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature14 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature15 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature16 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature17 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature18 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature19 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature20 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature21 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature22 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature23 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature24 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature25 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature26 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature27 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature28 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature29 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature30 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature31 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature32 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature33 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature34 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature35 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature36 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature37 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature38 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature39 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature40 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature41 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature42 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature43 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature44 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature45 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature46 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature47 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature48 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature49 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature50 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature51 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature52 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature53 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature54 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature55 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature56 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature57 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature58 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature59 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature60 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature61 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature62 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature63 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature64 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature65 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature66 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature67 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature68 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature69 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature70 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature71 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature72 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature73 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature74 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature75 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature76 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature77 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature78 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature79 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature80 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature81 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature82 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature83 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature84 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature85 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature86 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature87 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature88 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature89 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature90 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature91 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature92 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature93 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature94 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature95 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature96 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature97 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature98 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nature99 %28CLV%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Complaint_Type__c</picklist>
+        <values>
+            <fullName>Commission</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Responsible Lending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origin</picklist>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PotentialLiability__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product__c</picklist>
+        <values>
+            <fullName>GC1020</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GC1040</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GC1060</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GC3020</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GC3040</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GC3060</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GC5020</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GC5040</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GC5060</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason</picklist>
+        <values>
+            <fullName>Breakdown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Equipment Complexity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Equipment Design</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Feedback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Performance</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SLAViolation__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Electrical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mechanical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Specifications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Structural</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warranty</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>
