@@ -39,6 +39,7 @@
     ]
   },
   "dependencies": {
+    "jest": "^29.7.0",
     "sfdx-lwc-jest": "^10.10.10"
   }
 }

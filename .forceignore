@@ -12,3 +12,5 @@ package.xml
 **/tsconfig.json
 
 **/*.ts
+.sfdx/typings/lwc/*
+.sfdx/indexes/lwc/custom-components.json
