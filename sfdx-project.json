@@ -8,7 +8,7 @@
       "path": "apex-mocks"
     }
   ],
-  "name": "Sandbox",
+  "name": "Sandbox_Org",
   "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
   "sourceApiVersion": "60.0"
