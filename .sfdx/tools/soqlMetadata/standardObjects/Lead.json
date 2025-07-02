@@ -20,7 +20,7 @@
     {
       "aggregatable": false,
       "custom": false,
-      "defaultValue": false,
+      "defaultValue": null,
       "extraTypeInfo": null,
       "filterable": true,
       "groupable": true,
@@ -985,7 +985,7 @@
     {
       "aggregatable": false,
       "custom": false,
-      "defaultValue": false,
+      "defaultValue": null,
       "extraTypeInfo": null,
       "filterable": true,
       "groupable": true,
@@ -1076,7 +1076,7 @@
     {
       "aggregatable": false,
       "custom": false,
-      "defaultValue": false,
+      "defaultValue": null,
       "extraTypeInfo": null,
       "filterable": true,
       "groupable": true,

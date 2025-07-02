@@ -3,13 +3,10 @@
     {
       "path": "force-app",
       "default": true
-    },
-    {
-      "path": "apex-mocks"
     }
   ],
-  "name": "Sandbox_Org",
+  "name": "Sandbox",
   "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "60.0"
+  "sourceApiVersion": "64.0"
 }

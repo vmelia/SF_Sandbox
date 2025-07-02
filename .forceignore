@@ -9,8 +9,4 @@ package.xml
 **/.eslintrc.json
 
 # LWC Jest
-**/tsconfig.json
-
-**/*.ts
-.sfdx/typings/lwc/*
-.sfdx/indexes/lwc/custom-components.json
+**/__tests__/**
