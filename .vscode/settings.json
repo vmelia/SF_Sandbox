@@ -6,5 +6,6 @@
   },
   "salesforce.einsteinForDevelopers.advanced": {
     
-  }
+  },
+  "xml.preferences.showSchemaDocumentationType": "none"
 }
